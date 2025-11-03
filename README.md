@@ -1,2 +1,2 @@
 # LEI-BD2
-Repository for the BD2 Curricular Unit
+Repository for the Database Systems II Curricular Unit
