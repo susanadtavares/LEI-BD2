@@ -47,6 +47,20 @@ DBMS Programming Languages
 - Control Structures
 - Programming in PL/SQL
 
+
+## 📚 **Teaching Staff**
+Professor Paulo Tomé
+
+Professor Paulo Costa
+
+Professor Jorge Silva
+
+## ⚠️ **Disclaimer**
+This is a university purpose project and may contain suboptimal practices or even errors.
+
+If you have any questions or suggestions, feel free to ask.
+
+This repository is public and it is intended for archival and educational purposes only.
 Frameworks for Web development applications
 
 - Concepts
