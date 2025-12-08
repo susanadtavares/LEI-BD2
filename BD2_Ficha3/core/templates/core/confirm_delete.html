@@ -1,0 +1,9 @@
+{% extends "core/base.html" %}
+{% block content %}
+<h2>Confirmar eliminação</h2>
+<p>Queres mesmo apagar: <strong>{{ obj }}</strong>?</p>
+<form method="post">{% csrf_token %}
+  <button type="submit">Apagar</button>
+  <a href="{% url voltar %}">Cancelar</a>
+</form>
+{% endblock %}

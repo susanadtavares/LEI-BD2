@@ -1,0 +1,30 @@
+{% extends "core/base.html" %}
+{% block title %}Inscrições{% endblock %}
+{% block content %}
+  <h2>Inscrições</h2>
+  <form method="get">
+    <label>Mostrar inscrições depois de:
+      <input type="date" name="data" value="{{ data }}">
+    </label>
+    <button type="submit">Filtrar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Data</th><th>Nº Mec.</th><th>Aluno</th>
+        <th>ID UC</th><th>UC</th><th>ID Turno</th><th>Nº Turno</th><th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in rows %}
+        <tr>
+          <td>{{ r.0 }}</td><td>{{ r.1 }}</td><td>{{ r.2 }}</td><td>{{ r.3 }}</td>
+          <td>{{ r.4 }}</td><td>{{ r.5 }}</td><td>{{ r.6 }}</td><td>{{ r.7 }}</td><td>{{ r.8 }}</td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="9">Sem resultados.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

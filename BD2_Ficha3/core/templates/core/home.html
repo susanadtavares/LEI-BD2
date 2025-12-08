@@ -1,0 +1,11 @@
+{% extends "core/base.html" %}
+{% block content %}
+<h1>Menu</h1>
+<p>
+  <a href="{% url 'docente_list' %}">CRUD Docentes</a> ·
+  <a href="{% url 'inscricao_list' %}">CRUD Inscrições</a> ·
+  <a href="{% url 'docente_top' %}">Docente com mais UCs</a> ·
+  <a href="{% url 'inscricoes_por_ano' %}">Inscrições em 2025</a>
+
+</p>
+{% endblock %}

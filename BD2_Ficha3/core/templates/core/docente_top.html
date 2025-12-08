@@ -1,0 +1,11 @@
+{% extends "core/base.html" %}
+{% block title %}Docente com mais UCs{% endblock %}
+{% block content %}
+  <h2>Docente com mais UCs</h2>
+  {% if row %}
+    <p><strong>ID:</strong> {{ row.0 }} | <strong>Nome:</strong> {{ row.1 }} |
+       <strong>Email:</strong> {{ row.2 }} | <strong>Total UCs:</strong> {{ row.3 }}</p>
+  {% else %}
+    <p>Sem dados.</p>
+  {% endif %}
+{% endblock %}

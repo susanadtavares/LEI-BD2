@@ -1,0 +1,8 @@
+{
+  _id: "AVE",               
+  name: "Aveiro",
+  city: "Aveiro",
+  geo: { type: "Point", coordinates: [-8.645, 40.640] },
+  aliases: ["Aveiro"]
+}
+

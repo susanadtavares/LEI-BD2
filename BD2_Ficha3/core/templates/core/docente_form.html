@@ -1,0 +1,27 @@
+{% extends "core/base.html" %}
+{% load form_extras %}
+{% block title %}{{ titulo }}{% endblock %}
+{% block content %}
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">{{ titulo }}</h2>
+    <a class="btn btn-outline-secondary" href="{% url 'docente_list' %}">Voltar</a>
+  </div>
+
+  <div class="card p-3">
+    <form method="post" class="row g-3">
+      {% csrf_token %}
+      <div class="col-12">
+        <label class="form-label">Nome</label>
+        {{ form.nome|add_class:"form-control" }}
+      </div>
+      <div class="col-12">
+        <label class="form-label">Email</label>
+        {{ form.email|add_class:"form-control" }}
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary">Guardar</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}
